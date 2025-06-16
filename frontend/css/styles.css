@@ -1,9 +1,6 @@
-* {
-    font-family: monospace;
-}
-
 body {
-    display: flex;
+  font-family: 'Rubik', sans-serif;
+      display: flex;
     flex-direction: column;
 }
 
@@ -27,7 +24,7 @@ body {
 .header-link {
     margin-left: 20px;
     color: #9197AE;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .content {
