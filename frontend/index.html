@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Risk Dashboard</title>
+</head>
+
+<body>
+    <h1>Basic demo</h1>
+
+    <!-- hard-coded testing form -->
+    <form id="survey-form">
+        <input name="BMI" type="number" placeholder="BMI" step="0.1" required>
+        <input name="Smoking" type="hidden" value="Yes">
+        <button type="submit">Calculate</button>
+    </form>
+
+    <!-- risk chart with -->
+    <canvas id="risk-chart" width="300" height="300"></canvas>
+    <p id="risk-text"></p>
+
+    <section id="disclaimer">
+        <strong>Disclaimer:</strong> Educational prototype. NOT a diagnostic tool.
+    </section>
+</body>
+</html>
