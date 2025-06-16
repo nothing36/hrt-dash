@@ -23,7 +23,7 @@ async function submitForm(e){
 
     // render on screen result
     renderRisk(risk);
-    document.getElementById("riskText").textContent =
+    document.getElementById("risk-text").textContent =
         `Model estimates ${(risk * 100).toFixed(1)} %`;
 }
 
@@ -34,7 +34,7 @@ document.getElementById("user-form").addEventListener("submit", submitForm);
 
 // render a risk chart
 function renderRisk(p){
-  const ctx = document.getElementById("riskChart");
+  const ctx = document.getElementById("risk-chart");
   chart?.destroy();  // remove old charts
   chart = new Chart(ctx, {
     type:"doughnut",
