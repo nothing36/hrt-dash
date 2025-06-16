@@ -12,21 +12,29 @@
 </head>
 
 <body>
-    <h1>Basic demo</h1>
+    <!-- nav header -->
+    <div class="header">
+        <div class="header-logo">HEART-DASH</div>
+        <div class="header-link">Estimate</div>
+        <div class="header-link">FRS</div>
+        <div class="header-link">About</div>
+    </div>
 
-    <!-- hard-coded testing form -->
-    <form id="user-form">
-        <input name="BMI" type="number" placeholder="BMI" step="0.1" required>
-        <input name="Smoking" type="hidden" value="Yes">
-        <button type="submit">Calculate</button>
-    </form>
+    <div class="content">
+        <!-- hard-coded testing form -->
+        <form id="user-form">
+            <input name="BMI" type="number" placeholder="BMI" step="0.1" required>
+            <input name="Smoking" type="hidden" value="Yes">
+            <button type="submit">Calculate</button>
+        </form>
 
-    <!-- risk chart with -->
-    <canvas id="risk-chart" width="300" height="300"></canvas>
-    <p id="risk-text"></p>
+        <!-- risk chart with -->
+        <canvas id="risk-chart" width="300" height="300"></canvas>
+        <p id="risk-text"></p>
 
-    <section id="disclaimer">
-        <strong>Disclaimer:</strong> Educational prototype. NOT a diagnostic tool.
-    </section>
+        <section id="disclaimer">
+            <strong>Disclaimer:</strong> Educational prototype. NOT a diagnostic tool.
+        </section>
+    </div>
 </body>
 </html>

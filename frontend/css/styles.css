@@ -1,0 +1,35 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px;
+    height: calc(10vh);
+    position: sticky;
+}
+
+.header-logo {
+    margin-right: auto;
+    font-weight: bolder;
+    color: #F02D3A;
+    font-size: 2rem;
+}
+
+.header-link {
+    margin-left: 20px;
+    color: #9197AE;
+    font-size: 1.5rem;
+}
+
+.content {
+    background-color: #273043;
+}
