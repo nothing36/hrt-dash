@@ -77,3 +77,51 @@ body > * {
   width: 300px !important;
   height: 300px !important;
 }
+
+.content-tools {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 65vh;
+    justify-content: left;
+}
+
+.tools-title {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.75rem;
+    color: #273043;
+}
+
+.tools-card-container {
+    padding-top: 40px;
+    display: flex;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.tools-card {
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    transition: filter .5s;
+    padding: 2rem;
+    border: 3px solid #273043;
+    border-radius: 2rem;
+}
+
+.tools-card-name {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color:#F02D3A;
+}
+
+.tools-card-desc {
+    font-size: 1.5rem;
+    color: #273043;
+}
+
+.tools-card:hover{
+  filter: brightness(0.85);
+}
