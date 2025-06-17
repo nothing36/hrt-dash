@@ -21,7 +21,32 @@
         <div class="header-link">About</div>
     </div>
 
-    <div class="content">
+    <div class="content-info">
+        <div class="info-title">In 2020, over 50,000 Canadians over age 20 died of heart disease</div>
+
+        <!-- info cards -->
+        <div class="info-card-container">
+            <!-- percentage chart -->
+            <div class="info-card">
+                <canvas id="canada-percent-chart"></canvas>
+                <div class="info-description">17.5% of Canadians over the age of 20 are diagnosed with heart disease</div>
+            </div>
+
+            <!-- leading causes of death chart -->
+            <div class="info-card">
+                <canvas id="canada-causes-chart"></canvas>
+                <div class="info-description">Heart disease is the second-largest killer behind cancer in Canada</div>
+            </div>
+
+            <!-- improvement chart -->
+            <div class="info-card">
+                <canvas id="canada-improvement-chart"></canvas>
+                <div class="info-description">Heart disease is on the decline, we can take steps to reduce it further</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-calculate">
         <!-- hard-coded testing form -->
         <form id="user-form">
             <input name="BMI" type="number" placeholder="BMI" step="0.1" required>
@@ -32,10 +57,10 @@
         <!-- risk chart with -->
         <canvas id="risk-chart" width="300" height="300"></canvas>
         <p id="risk-text"></p>
-
-        <section id="disclaimer">
-            <strong>Disclaimer:</strong> Educational prototype. NOT a diagnostic tool.
-        </section>
     </div>
+
+    <section id="disclaimer">
+        <strong>Disclaimer:</strong> Educational prototype. NOT a diagnostic tool.
+    </section>
 </body>
 </html>
