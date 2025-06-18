@@ -15,11 +15,11 @@ body > * {
     color: #F02D3A;
 }
 
-.content-info {
+.content {
     display: flex;
     flex-direction: column;
     background-color: #273043;
     box-sizing: border-box;
-    height: 75vh;
+    height: 100vh;
     justify-content: space-around;
 }

@@ -24,7 +24,160 @@
     </div>
 
     <!-- user entry -->
-    <div class="content-info">
+    <div class="content">
+        <form id="risk-form" class="input-container">
+
+            <!-- user demographic section -->
+            <fieldset class="input-demographics">
+                <legend>Demographics</legend>
+
+                <label>Sex
+                    <select name="Sex" required>
+                        <option value="" disabled selected>- select -</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+                </label>
+
+                <label>Age
+                    <input type="number" id="age" min="18" max="100">
+                </label>
+
+                <label>Race
+                    <select name="Race" required>
+                        <option value="" disabled selected>- select -</option>
+                        <option value="American Indian/Alaskan Native">Indigenous</option>
+                        <option value="Asian">Asian</option>
+                        <option value="Black">Black</option>
+                        <option value="Hispanic">Hispanic</option>
+                        <option value="Other">Other / Mixed</option>
+                        <option value="White">White</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- lifestyle section -->
+            <fieldset class="input-lifestyle">
+                <legend>Lifestyle</legend>
+
+                <div class="binary">
+                    <span>Do you smoke?</span>
+                    <label><input type="radio" name="Smoking" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="Smoking" value="No">No</label>
+                </div>
+
+                <div class="binary">
+                    <span>Do you drink alcohol?</span>
+                    <label><input type="radio" name="AlcoholDrinking" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="AlcoholDrinking" value="No">No</label>
+                </div>
+
+                <div class="binary">
+                    <span>Do you do any physical activity?</span>
+                    <label><input type="radio" name="PhysicalActivity" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="PhysicalActivity" value="No">No</label>
+                </div>
+
+                <label>How many hours per night do you sleep?
+                    <input type="number" name="SleepTime" min="0" max="24" required>
+                </label>
+            </fieldset>
+
+            <!-- vitals section -->
+            <fieldset class="input-vitals">
+                <legend>Vitals</legend>
+
+                <label>BMI
+                    <input type="number" name="BMI" id="BMI" step="0.1" min="10" max="60" required>
+                </label>
+
+                <details>
+                    <summary>Don't know your BMI?</summary>
+                    <label>Weight (kg)
+                        <input type="number" id="weight" min="20" max="300">
+                    </label>
+                    <label>Height (cm)
+                        <input type="number" id="height" min="100" max="250">
+                    </label>
+                </details>
+            </fieldset>
+
+            <!-- chronic conditions section -->
+            <fieldset class="input-conditions">
+                <legend>Chronic Conditions</legend>
+
+                <div class="binary">
+                    <span>Have you had a stroke?</span>
+                    <label><input type="radio" name="Stroke" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="Stroke" value="No">No</label>
+                </div>
+
+                <div class="binary">
+                    <span>Have you had kidney disease?</span>
+                    <label><input type="radio" name="KidneyDisease" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="KidneyDisease" value="No">No</label>
+                </div>
+
+                <div class="binary">
+                    <span>Have you been diagnosed with asthma?</span>
+                    <label><input type="radio" name="Asthma" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="Asthma" value="No">No</label>
+                </div>
+
+                <div class="binary">
+                    <span>Have you been diagnosed with skin cancer?</span>
+                    <label><input type="radio" name="SkinCancer" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="SkinCancer" value="No">No</label>
+                </div>
+
+                <label>Are you diabetic?
+                    <select name="Diabetic" required>
+                        <option value="" disabled selected>- select -</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="No, borderline diabetes">Borderline/Prediabetic</option>
+                        <option value="Yes (during pregnancy)">Gestational/During Pregnancy</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- qol section -->
+            <fieldset class="input-qol">
+                <legend>Quality of Life</legend>
+
+                <label>Days you felt physically unwell (last 30 days, guess if unsure)
+                    <input type="number" name="PhysicalHealth" min="0" max="30" required>
+                </label>
+
+                <label>Days you felt mentally unwell / stressed (last 30 days, guess if unsure)
+                    <input type="number" name="MentalHealth" min="0" max="30" required>
+                </label>
+
+                <label>Serious difficulty walking or climbing stairs?
+                    <select name="DiffWalking" required>
+                        <option value="" disabled selected>- select -</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </label>
+
+                <label>Overall health rating (best guess)
+                    <select name="GenHealth" required>
+                        <option value="" disabled selected>- select -</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very good">Very good</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
+
+        <!-- right side of screen for live updates -->
+        <div class="risk-container">
+
+        </div>
     </div>
 </body>
 </html>
