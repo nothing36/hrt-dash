@@ -11,6 +11,10 @@ body > * {
     padding-bottom: 20px;
 }
 
+#highlight {
+    color: #F02D3A;
+}
+
 .content-info {
     display: flex;
     flex-direction: column;
@@ -23,6 +27,7 @@ body > * {
 .info-card-container {
     display: flex;
     gap: 2rem;
+    justify-content: space-evenly;
 }
 
 .info-card {
@@ -81,7 +86,6 @@ body > * {
 
 .tools-card {
     background-color: white;
-    position: relative;
     cursor: pointer;
     transition: filter .5s;
     padding: 2rem;
@@ -91,6 +95,7 @@ body > * {
 
 .tools-card-name {
     margin-bottom: 2rem;
+    text-align: center;
     font-size: 2rem;
     color:#F02D3A;
 }
@@ -98,8 +103,9 @@ body > * {
 .tools-card-desc {
     font-size: 1.5rem;
     color: #273043;
+    text-align: center;
 }
 
 .tools-card:hover{
-  filter: brightness(0.85);
+  filter: brightness(0.9);
 }

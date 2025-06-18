@@ -1,0 +1,25 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+body > * {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#highlight {
+    color: #F02D3A;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #273043;
+    box-sizing: border-box;
+    height: 75vh;
+    justify-content: space-around;
+}
