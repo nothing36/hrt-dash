@@ -11,7 +11,7 @@ body > * {
     padding-bottom: 20px;
 }
 
-#highlight {
+#highlight > a {
     color: #F02D3A;
 }
 
