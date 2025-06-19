@@ -11,19 +11,40 @@ body > * {
     padding-bottom: 20px;
 }
 
-#highlight {
-    color: #F02D3A;
-}
-
 .content {
     display: flex;
     background-color: #273043;
     box-sizing: border-box;
-    height: 100vh;
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
-    max-width: 50vw;
+    width: 50vw;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding-right: 60px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-color: #273043;
+}
+
+legend {
+    font-size: 1.5rem;
+    color:#F02D3A;
+    padding: 0 8px;
+}
+
+label, span {
+    color:white;
+    margin-right: 25px;
+    font-size: 1.25rem;
+}
+
+label select, label input {
+    margin-left: 25px;
 }

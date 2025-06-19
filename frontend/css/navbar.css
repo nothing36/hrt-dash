@@ -23,3 +23,8 @@ a {
     text-decoration: none;
     color: #273043;
 }
+
+#highlight {
+    color: #F02D3A;
+    font-weight: 500;
+}
