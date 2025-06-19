@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt \
 
 # copy weights + FastAPI
 COPY app ./app
+COPY weights ./weights
 EXPOSE 8000
 
 # run the service with uvicorn
