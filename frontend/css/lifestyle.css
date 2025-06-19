@@ -17,9 +17,13 @@ body > * {
 
 .content {
     display: flex;
-    flex-direction: column;
     background-color: #273043;
     box-sizing: border-box;
     height: 100vh;
-    justify-content: space-around;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
 }
