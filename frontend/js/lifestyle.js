@@ -1,7 +1,6 @@
 // lifestyle.js
 document.addEventListener('DOMContentLoaded', () => {
     const form    = document.getElementById('risk-form');
-    const riskVal = document.querySelector('.risk-val');
     const riskGaugeCanvas = document.getElementById('risk-gauge');
     const API_URL = 'http://localhost:8000/predict';
 
